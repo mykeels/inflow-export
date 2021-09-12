@@ -1,3 +1,4 @@
+import dotenv from "dotenv";
 import {
   getAccessTokenFromConsole,
   getDateRangeFromConsole,
@@ -7,10 +8,14 @@ import { exportInflowTransactions } from "./core";
 import { getTransactionsInDateRange } from "./get-transactions";
 import { transformInflowTransactionsToCSV } from "./transform-transactions";
 import { saveToCSVFile } from "./save-transactions";
+import { createEnvFile } from "./create-env";
+
+dotenv.config();
 
 if (require.main === module) {
   (async () => {
     try {
+      await createEnvFile();
       await exportInflowTransactions(
         getAccessTokenFromConsole,
         async (accessToken: string) => {
