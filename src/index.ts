@@ -87,7 +87,7 @@ if (require.main === module) {
           csvStringify(
             transactions.map((t) => [
               t.summary,
-              t.debit,
+              Number(t.debit) / 100,
               new Date(t.transactionInitDate)?.toISOString(),
               t.bankName,
               t.account,
