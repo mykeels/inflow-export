@@ -1,0 +1,30 @@
+{
+  "name": "inflow-export",
+  "version": "1.0.0",
+  "description": "Export my spendings as CSV across all Nigerian Bank accounts, using inflow.finance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mykeels/inflow-export.git"
+  },
+  "keywords": [
+    "inflow",
+    "finance",
+    "export",
+    "csv"
+  ],
+  "author": "mykeels",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mykeels/inflow-export/issues"
+  },
+  "homepage": "https://github.com/mykeels/inflow-export#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "command-line-args": "^5.2.0",
+    "command-line-usage": "^6.1.1"
+  }
+}
