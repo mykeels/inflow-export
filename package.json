@@ -6,7 +6,7 @@
   "main": "index.js",
   "typings": "./dist/index.d.ts",
   "files": [
-    "./dist"
+    "/dist"
   ],
   "scripts": {
     "start": "node ./dist/index.js",
