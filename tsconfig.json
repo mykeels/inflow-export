@@ -18,7 +18,8 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "resolveJsonModule": false
+    "resolveJsonModule": false,
+    "newLine": "lf"
   },
   "exclude": ["node_modules"],
   "include": ["src/**/*"]
