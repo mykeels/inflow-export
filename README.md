@@ -56,7 +56,7 @@ and follow the prompts.
 console.log("Copy the above Token 👆🏻");
 ```
 
-## Disclaimer
+## Legal Disclaimer
 
 The author of this package is NOT liable for any misdemeanour on your bank accounts, or inflow finance accounts.
 
