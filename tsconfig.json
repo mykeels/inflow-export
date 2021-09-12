@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "lib": ["es2019", "esnext.asynciterable", "dom"],
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": false,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {},
+    "typeRoots": ["./node_modules/@types", "./typings"],
+    "types": [],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": false
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"]
+}
