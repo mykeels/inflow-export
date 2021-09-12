@@ -12,6 +12,7 @@
     "moduleResolution": "node",
     "baseUrl": "./src",
     "paths": {},
+    "declaration": true,
     "typeRoots": ["./node_modules/@types", "./typings"],
     "types": ["mocha", "node"],
     "esModuleInterop": true,
