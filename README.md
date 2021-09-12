@@ -34,4 +34,30 @@ inflow-export
 
 and follow the prompts.
 
+## Get your Access Token
+
+- Login to your inflow finance via web browser
+- Open the browser console (CTRL+SHIFT+I), and enter:
+
+```js
+(function () {
+  function getCookie(name) {
+    function escape(s) {
+      return s.replace(/([.*+?\^$(){}|\[\]\/\\])/g, "\\$1");
+    }
+    var match = document.cookie.match(
+      RegExp("(?:^|;\\s*)" + escape(name) + "=([^;]*)")
+    );
+    return match ? match[1] : null;
+  }
+  console.log(getCookie("__ACCESS_TOKEN__").replace(/\%22/g, ""));
+})();
+
+console.log("Copy the above Token 👆🏻");
+```
+
+## Disclaimer
+
+The above code does NOT make the author of this package, liable for any misdemeanour on your bank accounts, or inflow finance accounts.
+
 Enjoy!
