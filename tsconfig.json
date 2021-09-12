@@ -13,7 +13,7 @@
     "baseUrl": "./src",
     "paths": {},
     "typeRoots": ["./node_modules/@types", "./typings"],
-    "types": [],
+    "types": ["mocha", "node"],
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,

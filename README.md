@@ -11,5 +11,9 @@ Inflow saves the user's access token (JWT) in as a secure cookie, which can be o
 ```bash
 inflow-export
 > Provide your Access Token: ****
+> What date range would you like to filter by? (Last 30 days)
+- Last 30 Days
+- All
+- Custom
 > Exported to /home/mykeels/Documents/inflow-2021-09-12-13-16.csv
 ```

@@ -4,9 +4,11 @@
   "description": "Export my spendings as CSV across all Nigerian Bank accounts, using inflow.finance",
   "main": "index.js",
   "scripts": {
+    "start": "node ./dist/index.js",
+    "start:dev": "nodemon ./dist/index.js",
     "watch": "tsc --watch -p ./tsconfig.json",
     "build": "tsc -p ./tsconfig.json",
-    "test": "mocha src/__tests__/**/*.test.js --timeout 0 --require ts-node/register"
+    "test": "mocha src/__tests__/**/*.test.ts --timeout 0 --require ts-node/register"
   },
   "repository": {
     "type": "git",
@@ -26,16 +28,24 @@
   "homepage": "https://github.com/mykeels/inflow-export#readme",
   "dependencies": {
     "axios": "^0.21.4",
+    "chalk": "^4.1.2",
+    "cli-select": "^1.1.2",
     "command-line-args": "^5.2.0",
     "command-line-usage": "^6.1.1",
+    "csv-stringify": "^5.6.5",
+    "date-fns": "^2.23.0",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.21",
     "@types/command-line-args": "^5.2.0",
     "@types/command-line-usage": "^5.0.2",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.9.1",
     "chai": "^4.3.4",
     "mocha": "^9.1.1",
+    "nodemon": "^2.0.12",
     "sinon": "^11.1.2"
   }
 }
