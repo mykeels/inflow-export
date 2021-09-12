@@ -2,11 +2,11 @@
   "name": "inflow-export",
   "version": "1.0.3",
   "description": "Export my spendings as CSV across all Nigerian Bank accounts, using inflow.finance",
-  "bin": "node dist/index.js",
+  "bin": "./dist/index.js",
   "main": "index.js",
   "typings": "./dist/index.d.ts",
   "files": [
-    "/dist"
+    "./dist"
   ],
   "scripts": {
     "start": "node ./dist/index.js",
