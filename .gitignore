@@ -1,0 +1,21 @@
+node_modules
+dist
+.env
+.env.staging
+yarn-error.log
+.vscode
+settings.json
+.DS_Store
+/data
+/coverage
+logs.json
+flags.json
+
+# cypress stuff
+app/cypress/videos
+app/cypress/screenshots
+dump_*.gz
+
+# scully
+scully.log
+scully.abel.config.js
