@@ -2,6 +2,9 @@ import axios from "axios";
 import chalk from "chalk";
 import csvStringify from "csv-stringify";
 import { addMonths, startOfDay } from "date-fns";
+import { promises as fs } from "fs";
+import os from "os";
+import path from "path";
 
 import { InflowTransaction } from "./core/models";
 import { exportInflowTransactions } from "./core";
@@ -9,7 +12,7 @@ import { readSecureString, readString, readFromOptions } from "./read-string";
 
 const INFLOW_API_ROOT_URL = "https://api.inflow.finance/v1";
 
-export const getAccessTokenFromConsole = async () =>
+const getAccessTokenFromConsole = async () =>
   readSecureString("Provide your Access Token: ");
 
 const getDateRangeFromConsole = async () => {
@@ -96,7 +99,17 @@ if (require.main === module) {
           )
         ),
       async (data) => {
-        console.log(data);
+        const d = new Date();
+        const filename = `inflow-${d.getFullYear()}-${
+          d.getMonth() + 1
+        }-${d.getDate()}-${d.getHours()}-${d.getMinutes()}-${d.getSeconds()}.csv`;
+        const filepath = path.join(os.homedir(), "/Documents", filename);
+        console.log(`Exported to ${filepath}`);
+        return fs.writeFile(
+          filepath,
+          data,
+          "utf8"
+        );
       }
     );
   })();
