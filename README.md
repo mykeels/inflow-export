@@ -17,3 +17,21 @@ inflow-export
 - Custom
 > Exported to /home/mykeels/Documents/inflow-2021-09-12-13-16.csv
 ```
+
+### Usage
+
+To install, run:
+
+```bash
+npm i -g inflow-export
+```
+
+To use, run:
+
+```bash
+inflow-export
+```
+
+and follow the prompts.
+
+Enjoy!
