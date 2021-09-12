@@ -58,6 +58,6 @@ console.log("Copy the above Token 👆🏻");
 
 ## Disclaimer
 
-The above code does NOT make the author of this package, liable for any misdemeanour on your bank accounts, or inflow finance accounts.
+The author of this package is NOT liable for any misdemeanour on your bank accounts, or inflow finance accounts.
 
 Enjoy!
