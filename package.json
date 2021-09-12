@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./dist/index.js",
-    "start:dev": "nodemon ./dist/index.js",
+    "start:dev": "nodemon ./dist/index.js -e js,ts",
     "watch": "tsc --watch -p ./tsconfig.json",
     "build": "tsc -p ./tsconfig.json",
     "test": "mocha src/__tests__/**/*.test.ts --timeout 0 --require ts-node/register"
@@ -34,6 +34,7 @@
     "command-line-usage": "^6.1.1",
     "csv-stringify": "^5.6.5",
     "date-fns": "^2.23.0",
+    "readline-sync": "^1.4.10",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
   },
@@ -43,6 +44,7 @@
     "@types/command-line-usage": "^5.0.2",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.9.1",
+    "@types/readline-sync": "^1.4.4",
     "chai": "^4.3.4",
     "mocha": "^9.1.1",
     "nodemon": "^2.0.12",
