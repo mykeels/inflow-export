@@ -19,3 +19,5 @@ dump_*.gz
 # scully
 scully.log
 scully.abel.config.js
+
+.npmrc
